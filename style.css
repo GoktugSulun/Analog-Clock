@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* body {
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  background: #1e1f26;
+}
+
+* body .clock {
+  width: 39rem;
+  height: 39rem;
+  background: url("clock2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  border-radius: 50%;
+  position: relative;
+  -webkit-box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05), inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.3), inset 0 15px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05), inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.3), inset 0 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+* body .clock .center-point {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 2px solid #000;
+  z-index: 9999;
+  border-radius: 50%;
+}
+
+* body .clock .hours {
+  position: absolute;
+  top: calc(50% - 80px);
+  left: calc(50% - 3.5px);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  width: 7px;
+  height: 80px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #fff;
+  -webkit-transition: all 1000ms linear;
+  transition: all 1000ms linear;
+}
+
+* body .clock .minutes {
+  position: absolute;
+  top: calc(50% - 160px);
+  left: calc(50% - 2.5px);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 5px;
+  height: 160px;
+  background: #fff;
+  -webkit-transition: all 1000ms linear;
+  transition: all 1000ms linear;
+}
+
+* body .clock .seconds {
+  z-index: -1;
+  position: absolute;
+  top: calc(50% - 200px);
+  left: calc(50% - 1px);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 2px;
+  height: 200px;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -webkit-transition: all 1000ms linear;
+  transition: all 1000ms linear;
+  background: red;
+}
+/*# sourceMappingURL=style.css.map */
